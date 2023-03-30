@@ -9,7 +9,7 @@ api_key = os.getenv('NEWSAPIPASSWORD')
 url = 'https://newsapi.org/v2/everything?' \
       f'q={topic}&' \
       'from=2023-02-28&sortBy=publishedAt&apiKey=' \
-      'd2992057f3b14c4ba469d54a25726661&' \
+      f'{api_key}&' \
       'language=en'
 
 # Make request
