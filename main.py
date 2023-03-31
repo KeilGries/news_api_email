@@ -13,10 +13,10 @@ url = 'https://newsapi.org/v2/everything?' \
       'language=en'
 
 # Make request
-request = requests.get(url)
+response = requests.get(url)
 
 # Get a dictionary with data
-content = request.json()
+content = response.json()
 
 
 body = 'Subject: Today\'s news' + '\n'
